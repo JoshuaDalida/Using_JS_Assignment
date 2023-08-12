@@ -111,7 +111,7 @@ full.addEventListener("click", function(){
 function recalculate(){
     totalCost = (costPerDay * numDaySelected);
     if (half.classList.contains("clicked")){
-        totalCost = totalCost / 2;
+        totalCost /= 2;
     }
     calculatedCost.innerHTML = totalCost;
 }
